@@ -1,0 +1,7 @@
+@font-face {
+    font-family:"samim-font";
+    src: url("./font/Samim-Bold.woff2");
+}
+*{
+    font-family:"samim-font";
+}

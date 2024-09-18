@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="./font.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./deatils.css" />
+  </head>
+  <body class="text-white font-extrabold">
+    <div class="container">
+      <div class="grid sm:grid-cols-2 h-screen" id="whell-lucky">
+        <div class="col-span-1 aspect-square relative sm:order-2">
+          <i class="fas fa-play fa-2x absolute transform rotate-[56deg] top-[50%]  lg:top-[48%] right-[10%] sm:right-[0] md:right-[10%]"></i>
+          <div class="w-4/5 h-4/5 sm:w-full sm:h-full md:w-4/5 md:h-4/5 mt-14 border-8 bg-yellow-500 border-black mx-auto rounded-full overflow-hidden relative transition: all ease-in-out 5s;
+          transform: rotate(90deg);" id="box">
+          <div class="box1">
+            <span class="w-full h-full inline-block absolute span1"><b class="absolute top-[20%] right-[65%] md:right-[65%] transform rotate-[220deg] sm:text-lg">8 جایزه</b></span>
+            <span class="w-full h-full inline-block absolute span2"><b class="absolute top-[15%]  right-[41%] md:right-[42%] transform rotate-[270deg] sm:text-lg">جایزه 7</b></span>
+            <span class="w-full h-full inline-block absolute span3"><b class="absolute top-[22%] right-[18%] transform rotate-[315deg] sm:text-lg">جایزه 6</b></span>
+            <span class="w-full h-full inline-block absolute span4"><b class="absolute top-[45%] right-[12%] md:top-[47%] sm:text-lg">جایزه 5</b></span>
+          </div>
+          <div class="box2 transform rotate-180 w-full h-full">
+            <span class="w-full h-full inline-block absolute span1"><b class="absolute top-[25%] right-[61%] md:right-[63%] transform rotate-[223deg] sm:text-lg">4 جایزه</b></span>
+            <span class="w-full h-full inline-block absolute span2"><b class="absolute top-[20%] right-[41%] md:right-[43%] transform rotate-[270deg] sm:text-lg">3 جایزه</b></span>
+            <span class="w-full h-full inline-block absolute span3"><b class="absolute top-[26%] right-[20%]  transform rotate-[315deg] sm:text-lg">جایزه 2</b></span>
+            <span class="w-full h-full inline-block absolute span4"><b class="absolute top-[45%] right-[12%]  transform rotate-[350deg] sm:text-lg">جایزه 1</b></span>
+            
+          </div>
+          </div>
+        </div>
+        <div class="col-span-1 m-auto w-3/4 flex justify-center text-center p-5 sm:order-1">
+          <div class="flex flex-col w-full">
+            <h1 class="text-3xl mb-4">گردونه شانس</h1>
+          <button class="flex flex-col justify-center p-4 h-full w-full items-center rounded-full" id="btn-start" onclick="spin()">شروع</button>
+          </div>
+        </div>
+      </div>
+      <div class="w-[100%] h-screen md:w-[50%] md:h-[80%] mx-auto md:absolute md:top-[10%] md:right-[25%] hidden" id="modal">
+        <div class="w-full my-auto h-full rounded-md">
+          <div
+            class="flex w-full h-[50%] relative rounded-md justify-end items-end"
+            id="background"
+          >
+            <i
+              class="fa-solid fa-trophy fa-7x mx-auto text-amber-400 rounded-3xl"
+            ></i>
+          </div>
+          <div
+            class="bg-white flex w-full h-[45%] text-black justify-center items-center flex-row rounded-md"
+          >
+          <div class="grid grid-cols-8">
+            <div class="col-span-2 md:col-span-2">
+              <lord-icon
+              class="transform scale-x-[-1]"
+            src="https://cdn.lordicon.com/fkmafinl.json"
+            trigger="loop"
+            delay="2000"
+            >
+        </lord-icon>
+            </div>
+            <div class="col-span-4 md:col-span-4 flex justify-center text-center flex-col">
+              <p id="paragraph" class="text-lg"></p>
+              <button
+                id="btn-close"
+                class="bg-red-500 w-24 px-2 py-3 mx-auto mb-4 mt-5 text-white font-bold text-xl rounded-2xl hover:bg-red-700"
+              >
+                بستن
+              </button>
+            </div>
+            <div class="col-span-2 md:col-span-2">
+              <lord-icon
+            src="https://cdn.lordicon.com/fkmafinl.json"
+            trigger="loop"
+            delay="2000"
+            >
+        </lord-icon>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
